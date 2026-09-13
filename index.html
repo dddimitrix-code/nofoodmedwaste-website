@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NoFoodMedWaste — Stop waste before it happens</title>
+<meta name="description" content="Track food and medicine expiry dates, get smart reminders and AI-powered recipes, and reduce household waste.">
+<style>
+:root{--g:#0d7148;--gd:#06472f;--mint:#e9fbf5;--mint2:#c9f5e7;--ink:#13231d;--muted:#64736c;--line:rgba(13,113,72,.14);--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fbfffd,#f0fcf8)}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.wrap{width:min(1160px,calc(100% - 28px));margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,255,252,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:88px;position:relative;display:flex;align-items:center;justify-content:space-between}.logo img{height:72px}.desktop{display:none}.hamb{display:flex;width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:white;flex-direction:column;align-items:center;justify-content:center;gap:5px}.hamb span{width:22px;height:2px;background:var(--gd);transition:.2s}.hamb.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamb.on span:nth-child(2){opacity:0}.hamb.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.mobile{display:none;position:absolute;right:24px;top:76px;width:min(320px,calc(100vw - 48px));padding:10px 14px 14px;border:1px solid var(--line);border-radius:20px;background:rgba(250,255,252,.98);box-shadow:0 20px 60px rgba(6,71,47,.16)}.mobile.open{display:block}.mobile a{display:block;padding:13px 10px;font-weight:700;border-radius:12px}.mobile a:hover{background:var(--mint)}
+.hero{padding:72px 0 60px}.heroGrid{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center}.pill{display:inline-block;background:rgba(13,113,72,.08);color:var(--g);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:13px;font-weight:800}.hero h1{font-size:clamp(48px,6.5vw,78px);line-height:.98;letter-spacing:-.055em;margin:18px 0 22px}.hero p{font-size:20px;line-height:1.65;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;padding:14px 21px;border-radius:999px;font-weight:800;border:1px solid var(--line)}.primary{background:var(--g);color:white}.secondary{background:white}.heroVisual{border-radius:34px;overflow:hidden;box-shadow:0 28px 80px rgba(6,71,47,.17);max-width:500px;margin:auto}
+.section{padding:82px 0}.head{text-align:center;max-width:760px;margin:0 auto 38px}.head h2{font-size:clamp(36px,5vw,56px);line-height:1.02;letter-spacing:-.045em;margin:0 0 14px}.head p{color:var(--muted);font-size:18px;line-height:1.65}
+.steps,.features,.matter,.faqgrid{display:grid;gap:18px}.steps{grid-template-columns:repeat(4,1fr)}.features{grid-template-columns:repeat(3,1fr)}.matter{grid-template-columns:repeat(4,1fr)}.card{background:white;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 14px 42px rgba(13,113,72,.07)}.num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--mint2);color:var(--gd);font-weight:900;margin-bottom:16px}.card h3{font-size:21px;margin:0 0 9px}.card p{color:var(--muted);line-height:1.55;margin:0}
+.smart{background:linear-gradient(135deg,#e7fbf4,#c9f5e7);border-color:rgba(13,113,72,.22);position:relative}.early{display:inline-block;background:#fff3d4;color:#8b6510;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900;margin:7px 0 12px}.checks{line-height:1.9;color:#37564a}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.shot{overflow:hidden;border-radius:28px;border:1px solid var(--line);box-shadow:0 18px 55px rgba(13,113,72,.10)}
+.why{background:linear-gradient(180deg,#f0fcf8,#e3f9f1)}.matter .emoji{font-size:28px;margin-bottom:12px}.learn{display:inline-block;margin-top:26px;color:var(--g);font-weight:900}
+.impactbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:linear-gradient(135deg,#075437,#0d7a4e);color:white;border-radius:36px;padding:44px}.impactbox h2{font-size:clamp(38px,5vw,56px);margin:0 0 16px;letter-spacing:-.04em}.impactbox p{color:rgba(255,255,255,.82);font-size:18px;line-height:1.6}.impactvisual{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.metric{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:20px}.metric b{font-size:25px;display:block;margin-bottom:5px}.metric span{color:rgba(255,255,255,.76)}
+.faqgrid{max-width:860px;margin:auto}.faq{background:white;border:1px solid var(--line);border-radius:18px;padding:0 20px}.faq summary{cursor:pointer;font-weight:800;padding:20px 0}.faq p{color:var(--muted);line-height:1.6;margin:0 0 20px}
+.cta{text-align:center}.ctabox{background:white;border:1px solid var(--line);border-radius:36px;padding:48px 24px;box-shadow:0 18px 55px rgba(13,113,72,.10)}.ctabox img.logo2{width:min(300px,80vw);margin:0 auto 15px}.ctabox h2{font-size:clamp(40px,5vw,58px);margin:10px 0}.play img{height:43px;margin:18px auto 0}
+footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footlogo{width:230px;background:#dffaf0;border-radius:18px;padding:8px}.footerTitle{font-weight:900;color:white;margin-bottom:12px}.footerlinks a{display:block;margin:9px 0;color:#d9eee6}.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:22px;color:#a9c6bb}
+@media(max-width:900px){.heroGrid,.impactbox{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.steps{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.matter{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr}.heroVisual{max-width:430px}}
+@media(max-width:600px){.navin{height:78px}.logo img{height:62px}.hero{padding-top:46px}.steps,.features,.matter,.shots{grid-template-columns:1fr}.impactbox{padding:30px 22px}.impactvisual{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="logo" href="#top"><img src="assets/logo.png" alt="NoFoodMedWaste"></a><button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile" id="mobile"><div><a href="#features">Features</a><a href="#how">How It Works</a><a href="#screens">Screens</a><a href="#impact">Impact</a><a href="#why">Why It Matters</a><a href="https://nofoodwaste-app.lovable.app/faq" target="_blank" rel="noopener">FAQ</a><a href="#download">Download</a></div></div></nav>
+<main id="top">
+<section class="hero"><div class="wrap heroGrid"><div><span class="pill">🌱 Food + Medicine Waste Prevention</span><h1>Stop food and medicine waste before it happens.</h1><p>Track expiry dates, receive smart reminders, discover AI-powered recipes and reduce waste with food and medicine management tools.</p><div class="actions"><a class="btn primary" href="#download">Join Early Access</a><a class="btn secondary" href="#features">See Features</a></div></div><div class="heroVisual"><img src="assets/smart-scan.jpg" alt="NoFoodMedWaste Smart Scan"></div></div></section>
+<section class="section" id="how"><div class="wrap"><div class="head"><h2>How It Works</h2><p>From scanning to measurable impact in four simple steps.</p></div><div class="steps"><div class="card"><div class="num">1</div><h3>Scan Food & Medicines</h3><p>Use Smart Scan, Barcode Scan or OCR.</p></div><div class="card"><div class="num">2</div><h3>Track Expiry Dates</h3><p>Monitor food and medicines before they expire.</p></div><div class="card"><div class="num">3</div><h3>Get Smart Reminders</h3><p>Receive notifications before products are wasted.</p></div><div class="card"><div class="num">4</div><h3>Reduce Waste</h3><p>Save money, water and CO₂ emissions.</p></div></div></div></section>
+<section class="section" id="features"><div class="wrap"><div class="head"><h2>Core Features</h2><p>Everything you need to stay organized and act before products expire.</p></div><div class="features"><div class="card smart"><div style="display:flex;align-items:center;gap:10px;margin-bottom:4px"><img src="assets/smart-scan-symbol.png" alt="Smart Scan symbol" style="width:42px;height:42px;border-radius:12px"><h3 style="margin:0">Smart Scan</h3></div><span class="early">✨ EARLY ACCESS</span><div class="checks">✓ Product identification<br>✓ Barcode detection<br>✓ Best before & expiry date detection</div></div><div class="card"><h3>💊 Medicine Tracking</h3><p>Organize medicines and monitor expiry dates.</p></div><div class="card"><h3>👨‍🍳 AI Chef</h3><span class="early">✨ EARLY ACCESS</span><p>Get personalized meal ideas from ingredients already at home.</p></div><div class="card"><h3>🗓️ Weekly Meal Plan</h3><span class="early">✨ EARLY ACCESS</span><p>Plan meals around what you already have.</p></div><div class="card"><h3>🛒 Shopping List</h3><p>Create smarter lists and track shopping progress.</p></div><div class="card"><h3>🌍 Impact & Footprint</h3><p>Understand the resources and money your actions can help save.</p></div></div></div></section>
+<section class="section" id="screens">
+<div class="wrap">
+  <div class="head">
+    <h2>App Screens & Features</h2>
+    <p>Explore the main NoFoodMedWaste screens and feature previews.</p>
+  </div>
+
+  <div class="shots">
+    <div class="shot"><img src="assets/product-scan.png" alt="Scan Products In Seconds"></div>
+    <div class="shot"><img src="assets/medicines-screen.jpg" alt="Medicine tracking"></div>
+    <div class="shot"><img src="assets/recipes-screen.png" alt="AI Chef recipes"></div>
+    <div class="shot"><img src="assets/meal-plan-screen.png" alt="Weekly Meal Plan"></div>
+    <div class="shot"><img src="assets/shopping-screen.jpg" alt="Shopping List"></div>
+    <div class="shot"><img src="assets/impact-screen.jpg" alt="Impact and footprint"></div>
+  </div>
+
+  <div class="head" style="margin-top:70px">
+    <h2>Feature Previews</h2>
+    <p>Promotional previews for the key app experiences.</p>
+  </div>
+  <div class="shots">
+    <div class="shot"><img src="assets/promo-smart-scan.png" alt="Smart Scan promo"></div>
+    <div class="shot"><img src="assets/promo-medicines.png" alt="Medicines promo"></div>
+    <div class="shot"><img src="assets/promo-recipes.png" alt="AI Chef promo"></div>
+    <div class="shot"><img src="assets/promo-meal-plan.png" alt="Meal Plan promo"></div>
+    <div class="shot"><img src="assets/promo-shopping.png" alt="Shopping promo"></div>
+    <div class="shot"><img src="assets/promo-impact.png" alt="Impact promo"></div>
+  </div>
+</div>
+</section>
+<section class="section why" id="why"><div class="wrap"><div class="head"><h2>Why Food & Medicine Waste Matters</h2><p>Every year, huge amounts of food and medicines are wasted. This creates unnecessary environmental impact and increases household costs. NoFoodMedWaste helps you take action before products expire.</p></div><div class="matter"><div class="card"><div class="emoji">💧</div><h3>Water</h3><p>Food waste wastes valuable water resources.</p></div><div class="card"><div class="emoji">🌍</div><h3>Environment</h3><p>Reducing waste helps reduce emissions.</p></div><div class="card"><div class="emoji">💰</div><h3>Money</h3><p>Expired food and medicines cost households money.</p></div><div class="card"><div class="emoji">♻️</div><h3>Impact</h3><p>Small actions create measurable results.</p></div></div><div style="text-align:center"><a class="learn" href="https://nofoodwaste-app.lovable.app/why-it-matters" target="_blank" rel="noopener">Learn More →</a></div></div></section>
+<section class="section" id="impact"><div class="wrap"><div class="impactbox"><div><h2>Reduce Waste. Measure Impact.</h2><p>Track the kinds of impact that matter — money saved, CO₂e avoided, water saved and progress toward wasting less — without turning sustainability into a spreadsheet.</p></div><div class="impactvisual"><div class="metric"><b>💧 Water</b><span>Resources saved</span></div><div class="metric"><b>🌍 CO₂e</b><span>Emissions avoided</span></div><div class="metric"><b>💰 Money</b><span>Household savings</span></div><div class="metric"><b>🔥 Streak</b><span>Waste-free progress</span></div></div></div></div></section>
+<section class="section" id="faq">
+<div class="wrap">
+  <div class="head">
+    <h2>FAQ</h2>
+    <p>Find answers about NoFoodMedWaste, Smart Scan, expiry tracking and Early Access.</p>
+    <div style="margin-top:24px">
+      <a class="btn secondary" href="https://nofoodwaste-app.lovable.app/faq" target="_blank" rel="noopener">❓ Open FAQ →</a>
+    </div>
+  </div>
+</div>
+</section>
+<section class="section cta" id="download"><div class="wrap"><div class="ctabox"><img class="logo2" src="assets/logo.png" alt="NoFoodMedWaste"><h2>Save Resources. Reduce Waste. Make an Impact.</h2><p>Join Early Access and start building smarter habits around food and medicines.</p><a class="play" href="#"><img src="assets/google-play.png" alt="Google Play"></a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footgrid"><div><img class="footlogo" src="assets/logo.png" alt="NoFoodMedWaste"><p>Save Resources. Reduce Waste. Make an Impact.</p></div><div><div class="footerTitle">Contact</div><div class="footerlinks"><a href="mailto:nofoodmedwastesupport@gmail.com">nofoodmedwastesupport@gmail.com</a></div></div><div><div class="footerTitle">Legal</div><div class="footerlinks"><a href="https://sites.google.com/view/nofoodmedwaste/home/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a><a href="https://sites.google.com/view/nofoodmedwaste/home/terms-conditions" target="_blank" rel="noopener">Terms & Conditions</a></div></div></div><div class="copy">© 2026 NoFoodMedWaste 🌱</div></div></footer>
+<script>const h=document.getElementById('hamb'),m=document.getElementById('mobile');h.onclick=()=>{m.classList.toggle('open');h.classList.toggle('on')};m.querySelectorAll('a').forEach(a=>a.onclick=()=>{m.classList.remove('open');h.classList.remove('on')});</script>
+</body></html>
