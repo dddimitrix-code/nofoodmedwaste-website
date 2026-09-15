@@ -30,6 +30,24 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
 .soon-card p,.soon-card div{color:var(--muted);line-height:1.7}
 @media(max-width:800px){.soon-grid{grid-template-columns:1fr}.heroGrid{grid-template-columns:1fr}.hero h1{max-width:none}}
 
+
+.logo img{height:120px!important;width:120px!important;object-fit:contain;border-radius:16px}
+.navin{height:125px!important}.mobile{top:85px!important}
+.faq-list{max-width:920px;margin:28px auto 0;display:grid;gap:14px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+.faq-item h3{margin:0 0 8px;font-size:19px}.faq-item p{margin:0;color:var(--muted);line-height:1.6}
+.platform-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.platform-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:30px 24px;text-align:center;box-shadow:0 14px 42px rgba(13,113,72,.07)}
+.platform-icon{font-size:42px;margin-bottom:14px}.platform-card h3{font-size:24px;margin:0 0 8px}.platform-status{color:var(--g);font-weight:800}
+.platform-card.disabled{opacity:.72}
+@media(max-width:800px){.platform-grid{grid-template-columns:1fr}.logo img{height:105px!important;width:105px!important}.navin{height:112px!important}.mobile{top:85px!important}}
+
+.platform-logo{height:62px;width:72px;display:block;margin:0 auto 14px;object-fit:contain}
+.android-logo{width:78px}.apple-logo{width:54px}
+.platform-action{display:inline-flex;align-items:center;justify-content:center;margin-top:18px;padding:12px 20px;border-radius:999px;background:var(--g);color:#fff!important;font-weight:800;text-decoration:none}
+.platform-card.disabled .platform-status{color:var(--muted)}
+.platform-note{margin-top:12px;color:var(--muted);font-size:14px;line-height:1.45}
+.android-attribution{font-size:10px;color:var(--muted);margin-top:14px;line-height:1.35}
 </style>
 </head>
 <body>
@@ -60,12 +78,7 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
     <div class="shot"><img src="assets/impact-screen.jpg" alt="Impact and footprint"></div>
   </div>
 
-  <div class="head" style="margin-top:70px">
-    <h2>Feature Previews</h2>
-    <p>Promotional previews for the key app experiences.</p>
-  </div>
-  <div class="shots">
-    <div class="shot"><img src="assets/promo-smart-scan.png" alt="Smart Scan promo"></div>
+  
     <div class="shot"><img src="assets/promo-medicines.png" alt="Medicines promo"></div>
     <div class="shot"><img src="assets/promo-recipes.png" alt="AI Chef promo"></div>
     <div class="shot"><img src="assets/promo-meal-plan.png" alt="Meal Plan promo"></div>
@@ -76,17 +89,16 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
 </section>
 <section class="section why" id="why"><div class="wrap"><div class="head"><h2>Why Food & Medicine Waste Matters</h2><p>Every year, huge amounts of food and medicines are wasted. This creates unnecessary environmental impact and increases household costs. NoFoodMedWaste helps you take action before products expire.</p></div><div class="matter"><div class="card"><div class="emoji">💧</div><h3>Water</h3><p>Food waste wastes valuable water resources.</p></div><div class="card"><div class="emoji">🌍</div><h3>Environment</h3><p>Reducing waste helps reduce emissions.</p></div><div class="card"><div class="emoji">💰</div><h3>Money</h3><p>Expired food and medicines cost households money.</p></div><div class="card"><div class="emoji">♻️</div><h3>Impact</h3><p>Small actions create measurable results.</p></div></div><div style="text-align:center"><a class="learn" href="https://app.nofoodmedwaste.com/why-it-matters" target="_blank" rel="noopener">Learn More →</a></div></div></section>
 <section class="section" id="impact"><div class="wrap"><div class="impactbox"><div><h2>Reduce Waste. Measure Impact.</h2><p>Track the kinds of impact that matter — money saved, CO₂e avoided, water saved and progress toward wasting less — without turning sustainability into a spreadsheet.</p></div><div class="impactvisual"><div class="metric"><b>💧 Water</b><span>Resources saved</span></div><div class="metric"><b>🌍 CO₂e</b><span>Emissions avoided</span></div><div class="metric"><b>💰 Money</b><span>Household savings</span></div><div class="metric"><b>🔥 Streak</b><span>Waste-free progress</span></div></div></div></div></section>
-<section class="section" id="android"><div class="wrap"><div class="head"><h2>📱 Android App</h2><p>NoFoodMedWaste is currently available through Android Closed Testing.</p></div><div class="android-box" style="text-align:center"><p style="font-size:19px;color:var(--muted)">Interested in joining the testing program?</p><a class="btn primary" href="mailto:nofoodmedwastesupport@gmail.com">Join Android Testing</a></div><div class="head" style="margin-top:58px"><h2>Use NoFoodMedWaste</h2></div><div class="deep-links"><a class="deep-link" href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener"><b>🌐 Web App</b><span>app.nofoodmedwaste.com</span></a><a class="deep-link" href="mailto:nofoodmedwastesupport@gmail.com"><b>📱 Android App</b><span>Closed Testing</span></a></div></div></section><section class="section" id="faq">
-<div class="wrap">
-  <div class="head">
-    <h2>FAQ</h2>
-    <p>Find answers about NoFoodMedWaste, Smart Scan, expiry tracking and Early Access.</p>
-    <div style="margin-top:24px">
-      <a class="btn secondary" href="https://app.nofoodmedwaste.com/faq" target="_blank" rel="noopener">❓ Open FAQ →</a>
-    </div>
-  </div>
-</div>
-</section>
+<section class="section" id="android"><div class="wrap"><div class="head"><h2>📱 Android App</h2><p>NoFoodMedWaste is currently available through Android Closed Testing.</p></div><div class="android-box" style="text-align:center"><p style="font-size:19px;color:var(--muted)">Interested in joining the testing program?</p><a class="btn primary" href="mailto:nofoodmedwastesupport@gmail.com">Join Android Testing</a></div><div class="head" style="margin-top:58px"><h2>Use NoFoodMedWaste</h2></div><div class="deep-links"><a class="deep-link" href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener"><b>🌐 Web App</b><span>app.nofoodmedwaste.com</span></a><a class="deep-link" href="mailto:nofoodmedwastesupport@gmail.com"><b>📱 Android App</b><span>Closed Testing</span></a></div></div></section><section class="section" id="faq"><div class="wrap">
+<div class="head"><h2>FAQ</h2><p>Quick answers about NoFoodMedWaste.</p></div>
+<div class="faq-list">
+<div class="faq-item"><h3>Is NoFoodMedWaste free?</h3><p>Yes. Core features are available free of charge.</p></div>
+<div class="faq-item"><h3>Does it work for medicines?</h3><p>Yes. You can track medicine expiry dates and receive reminders.</p></div>
+<div class="faq-item"><h3>What is Smart Scan?</h3><p>Smart Scan uses AI to identify products, barcodes and expiry dates.</p></div>
+<div class="faq-item"><h3>Is the Android app available?</h3><p>Currently available through Closed Testing.</p></div>
+<div class="faq-item"><h3>Will there be an iPhone version?</h3><p>iOS support is planned and coming soon.</p></div>
+</div><div style="text-align:center;margin-top:26px"><a class="btn secondary" href="https://app.nofoodmedwaste.com/faq" target="_blank" rel="noopener">❓ View Full FAQ</a></div>
+</div></section>
 
 <section class="section" id="coming-soon"><div class="wrap">
   <div class="head">
@@ -110,7 +122,29 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
   </div>
 </div></section>
 
-<section class="section" id="download"><div class="wrap"><div class="openappbox" style="text-align:center"><h2 style="font-size:44px;margin:0 0 12px">Ready to start reducing food and medicine waste?</h2><a class="btn primary" href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener" style="margin-top:18px">🚀 Open App</a><p style="margin-top:14px"><a href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener" style="color:var(--g);font-weight:800">https://app.nofoodmedwaste.com</a></p></div></div></section>
+<section class="section" id="download"><div class="wrap">
+<div class="head" style="text-align:center;margin-left:auto;margin-right:auto">
+<h2>Choose your platform</h2>
+<p>Use NoFoodMedWaste on the web now or join Android Closed Testing.</p>
+</div>
+<div class="platform-grid">
+<div class="platform-card">
+<div class="platform-icon">🌐</div><h3>Web App</h3><div class="platform-status">Available now</div>
+<a class="platform-action" href="https://app.nofoodmedwaste.com/" target="_blank" rel="noopener">Open Web App</a>
+</div>
+<div class="platform-card">
+<svg class="platform-logo android-logo" viewBox="0 0 120 80" aria-label="Android" role="img">
+<g fill="#3DDC84"><path d="M29 29c2-10 9-18 18-22l-6-9 4-2 7 10c3-1 6-1 8-1s5 0 8 1l7-10 4 2-6 9c9 4 16 12 18 22H29z"/><path d="M25 33h70v31c0 6-5 11-11 11H36c-6 0-11-5-11-11V33z"/><rect x="12" y="35" width="10" height="31" rx="5"/><rect x="98" y="35" width="10" height="31" rx="5"/><rect x="39" y="67" width="11" height="18" rx="5"/><rect x="70" y="67" width="11" height="18" rx="5"/></g>
+<circle cx="46" cy="20" r="2.5" fill="#fff"/><circle cx="74" cy="20" r="2.5" fill="#fff"/></svg><h3>Android</h3><div class="platform-status">Closed Testing Active</div>
+<a class="platform-action" href="mailto:nofoodmedwastesupport@gmail.com">Join Android Testing</a>
+<div class="android-attribution">Android is a trademark of Google LLC. The Android robot is reproduced from work created and shared by Google and used according to the Creative Commons 3.0 Attribution License.</div>
+</div>
+<div class="platform-card disabled">
+<svg class="platform-logo apple-logo" viewBox="0 0 100 120" aria-label="Apple" role="img">
+<path fill="#111" d="M78 63c0-15 12-22 13-23-7-10-18-11-22-11-9-1-18 6-23 6-5 0-13-6-21-6-11 0-21 6-27 16-12 20-3 50 8 66 5 8 11 16 19 16 8 0 11-5 21-5 10 0 13 5 21 5 9 0 15-8 20-16 6-9 9-18 9-19-1 0-18-7-18-29z"/><path fill="#111" d="M63 19C67 14 70 7 69 0c-6 0-13 4-17 9-4 4-7 11-6 17 7 1 13-3 17-7z"/></svg><h3>iOS</h3><div class="platform-status">Coming Soon</div>
+<div class="platform-note">Sign in with Apple already supported on Web</div>
+</div>
+</div></div></section>
 </main>
 <footer><div class="wrap"><div class="footgrid"><div><img class="footlogo" src="assets/brand-logo-new.png" alt="NoFoodMedWaste"><p>Save Resources. Reduce Waste. Make an Impact.</p></div><div><div class="footerTitle">Quick Links</div><div class="footerlinks2"><a href="https://www.nofoodmedwaste.com/" target="_blank" rel="noopener">🌐 Website<br>www.nofoodmedwaste.com</a><a href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener">🚀 Open App<br>app.nofoodmedwaste.com</a><a href="mailto:nofoodmedwastesupport@gmail.com">📱 Android Testing<br>Contact Us</a><a href="mailto:nofoodmedwastesupport@gmail.com">📧 Contact<br>nofoodmedwastesupport@gmail.com</a></div></div><div><div class="footerTitle">Legal</div><div class="footerlinks"><a href="https://app.nofoodmedwaste.com/privacy" target="_blank" rel="noopener">Privacy Policy</a><a href="https://app.nofoodmedwaste.com/terms" target="_blank" rel="noopener">Terms & Conditions</a></div></div></div><div class="copy">© 2026 NoFoodMedWaste 🌱</div></div></footer>
 <script>const h=document.getElementById('hamb'),m=document.getElementById('mobile');h.onclick=()=>{m.classList.toggle('open');h.classList.toggle('on')};m.querySelectorAll('a').forEach(a=>a.onclick=()=>{m.classList.remove('open');h.classList.remove('on')});</script>
