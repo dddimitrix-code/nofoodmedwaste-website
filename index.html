@@ -48,10 +48,44 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
 .platform-card.disabled .platform-status{color:var(--muted)}
 .platform-note{margin-top:12px;color:var(--muted);font-size:14px;line-height:1.45}
 .android-attribution{font-size:10px;color:var(--muted);margin-top:14px;line-height:1.35}
+html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(max-width:800px){section[id],h2[id]{scroll-margin-top:112px}}
+/* v11 — feature card depth + interaction */
+.feature{
+  box-shadow:0 8px 24px rgba(13,113,72,.08);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.feature:hover{
+  transform:translateY(-5px);
+  box-shadow:0 16px 34px rgba(13,113,72,.14);
+  border-color:rgba(13,113,72,.24);
+}
+.feature:focus-within{
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px rgba(13,113,72,.13);
+}
+@media (prefers-reduced-motion:reduce){
+  .feature{transition:none}
+  .feature:hover,.feature:focus-within{transform:none}
+}
+
+
+/* v12 Core Features interaction */
+.features .card{box-shadow:0 8px 22px rgba(13,113,72,.09);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;}
+.features .card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(13,113,72,.15);border-color:rgba(13,113,72,.25);}
+@media (prefers-reduced-motion:reduce){.features .card{transition:none}.features .card:hover{transform:none}}
 </style>
 </head>
 <body>
-<nav><div class="wrap navin"><a class="logo" href="#top"><img src="assets/brand-logo-new.png" alt="NoFoodMedWaste"></a><button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile" id="mobile"><div><a href="#features">Features</a><a href="#how">How It Works</a><a href="#screens">Screens</a><a href="#impact">Impact</a><a href="#why">Why It Matters</a><a href="https://app.nofoodmedwaste.com/faq" target="_blank" rel="noopener">FAQ</a><a href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener">Download</a></div></div></nav>
+<nav><div class="wrap navin"><a class="logo" href="#top"><img src="assets/brand-logo-new.png" alt="NoFoodMedWaste"></a><button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile" id="mobile"><div>
+<a href="#how">How It Works</a>
+<a href="#features">Features</a>
+<a href="#screens">Screens</a>
+<a href="#why">Why It Matters</a>
+<a href="#impact">Impact</a>
+<a href="#faq">FAQ</a>
+<a href="#coming-soon">Coming Soon</a>
+<a href="#download">Choose Platform</a>
+</div></div></nav>
 <main id="top">
 <section class="hero"><div class="wrap heroGrid"><div><span class="pill">🌱 Food + Medicine Waste Prevention</span><div class="availability"><span>✅ Web App Available</span><a href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener">🚀 Open now at app.nofoodmedwaste.com</a><span>🚀 Closed Testing Active</span></div><h1>Stop food and medicine waste before it happens.</h1>
     <div class="hero-benefits">
@@ -66,7 +100,7 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
 <div class="wrap">
   <div class="head">
     <h2>App Screens & Features</h2>
-    <p>Explore the main NoFoodMedWaste screens and feature previews.</p>
+    <p>See NoFoodMedWaste in action. Explore the tools that help you track, organize and reduce waste.</p>
   </div>
 
   <div class="shots">
@@ -79,17 +113,17 @@ footer{background:#082d20;color:#d9eee6;padding:52px 0 34px}.footgrid{display:gr
   </div>
 
   
-    <div class="shot"><img src="assets/promo-medicines.png" alt="Medicines promo"></div>
-    <div class="shot"><img src="assets/promo-recipes.png" alt="AI Chef promo"></div>
-    <div class="shot"><img src="assets/promo-meal-plan.png" alt="Meal Plan promo"></div>
-    <div class="shot"><img src="assets/promo-shopping.png" alt="Shopping promo"></div>
-    <div class="shot"><img src="assets/promo-impact.png" alt="Impact promo"></div>
+    
+    
+    
+    
+    
   </div>
 </div>
 </section>
-<section class="section why" id="why"><div class="wrap"><div class="head"><h2>Why Food & Medicine Waste Matters</h2><p>Every year, huge amounts of food and medicines are wasted. This creates unnecessary environmental impact and increases household costs. NoFoodMedWaste helps you take action before products expire.</p></div><div class="matter"><div class="card"><div class="emoji">💧</div><h3>Water</h3><p>Food waste wastes valuable water resources.</p></div><div class="card"><div class="emoji">🌍</div><h3>Environment</h3><p>Reducing waste helps reduce emissions.</p></div><div class="card"><div class="emoji">💰</div><h3>Money</h3><p>Expired food and medicines cost households money.</p></div><div class="card"><div class="emoji">♻️</div><h3>Impact</h3><p>Small actions create measurable results.</p></div></div><div style="text-align:center"><a class="learn" href="https://app.nofoodmedwaste.com/why-it-matters" target="_blank" rel="noopener">Learn More →</a></div></div></section>
-<section class="section" id="impact"><div class="wrap"><div class="impactbox"><div><h2>Reduce Waste. Measure Impact.</h2><p>Track the kinds of impact that matter — money saved, CO₂e avoided, water saved and progress toward wasting less — without turning sustainability into a spreadsheet.</p></div><div class="impactvisual"><div class="metric"><b>💧 Water</b><span>Resources saved</span></div><div class="metric"><b>🌍 CO₂e</b><span>Emissions avoided</span></div><div class="metric"><b>💰 Money</b><span>Household savings</span></div><div class="metric"><b>🔥 Streak</b><span>Waste-free progress</span></div></div></div></div></section>
-<section class="section" id="android"><div class="wrap"><div class="head"><h2>📱 Android App</h2><p>NoFoodMedWaste is currently available through Android Closed Testing.</p></div><div class="android-box" style="text-align:center"><p style="font-size:19px;color:var(--muted)">Interested in joining the testing program?</p><a class="btn primary" href="mailto:nofoodmedwastesupport@gmail.com">Join Android Testing</a></div><div class="head" style="margin-top:58px"><h2>Use NoFoodMedWaste</h2></div><div class="deep-links"><a class="deep-link" href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener"><b>🌐 Web App</b><span>app.nofoodmedwaste.com</span></a><a class="deep-link" href="mailto:nofoodmedwastesupport@gmail.com"><b>📱 Android App</b><span>Closed Testing</span></a></div></div></section><section class="section" id="faq"><div class="wrap">
+<section class="section why" id="why"><div class="wrap"><div class="head"><h2>Why Food & Medicine Waste Matters</h2><p>Every year, huge amounts of food and medicines are wasted. This creates unnecessary environmental impact and increases household costs. NoFoodMedWaste helps you take action before products expire.</p></div><div class="matter"><div class="card"><div class="emoji">💧</div><h3>Water</h3><p>Food waste wastes valuable water resources.</p></div><div class="card"><div class="emoji">🌍</div><h3>Environment</h3><p>Reducing waste helps reduce emissions.</p></div><div class="card"><div class="emoji">💰</div><h3>Money</h3><p>Expired food and medicines cost households money.</p></div><div class="card"><div class="emoji">♻️</div><h3>Impact</h3><p>Small actions create measurable results.</p></div></div><div style="text-align:center"><a class="learn" href="#impact" target="_blank" rel="noopener">See Your Impact →</a></div></div></section>
+<section class="section" id="impact"><div class="wrap"><div class="impactbox"><div><h2>Small actions. Measurable impact.</h2><p>Track the kinds of impact that matter — money saved, CO₂e avoided, water saved and progress toward wasting less — without turning sustainability into a spreadsheet.</p></div><div class="impactvisual"><div class="metric"><b>💧 Water</b><span>Resources saved</span></div><div class="metric"><b>🌍 CO₂e</b><span>Emissions avoided</span></div><div class="metric"><b>💰 Money</b><span>Household savings</span></div><div class="metric"><b>🔥 Streak</b><span>Waste-free progress</span></div></div></div></div></section>
+<section class="section" id="faq"><div class="wrap">
 <div class="head"><h2>FAQ</h2><p>Quick answers about NoFoodMedWaste.</p></div>
 <div class="faq-list">
 <div class="faq-item"><h3>Is NoFoodMedWaste free?</h3><p>Yes. Core features are available free of charge.</p></div>
