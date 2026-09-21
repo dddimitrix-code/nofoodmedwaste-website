@@ -74,16 +74,18 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
 .features .card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(13,113,72,.15);border-color:rgba(13,113,72,.25);}
 @media (prefers-reduced-motion:reduce){.features .card{transition:none}.features .card:hover{transform:none}}
 
-/* v14: requested Coming Soon / platform refinements */
-.platform-card{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;box-sizing:border-box}
+/* v14 fixed — requested Coming Soon / platform refinements only */
+.platform-grid{align-items:stretch}
+.platform-card{height:100%;display:flex;flex-direction:column;align-items:center;box-sizing:border-box}
 .platform-card.disabled{opacity:1!important}
-.platform-card.disabled h3,.platform-card.disabled .platform-status,.platform-card.disabled .platform-note{opacity:1!important}
-.platform-card.disabled h3{color:var(--text,#102b22)!important}
-.platform-card.disabled .platform-status,.platform-card.disabled .platform-note{color:var(--muted,#66736d)!important}
-.platform-card.disabled .apple-logo{opacity:.62}
-.platform-note{max-width:260px;text-align:center}
-.shared-platform-legal{margin:16px auto 0;max-width:980px;padding:0 12px;text-align:center;font-size:11px;line-height:1.5;color:var(--muted,#66736d)}
+.platform-card.disabled h3{color:var(--text)!important;opacity:1!important}
+.platform-card.disabled .platform-status{color:var(--muted)!important;opacity:1!important}
+.platform-card.disabled .platform-note{color:var(--muted)!important;opacity:1!important}
+.platform-card.disabled .apple-logo{opacity:.58}
+.platform-note{max-width:270px;text-align:center}
+.shared-platform-legal{margin:16px auto 0;max-width:980px;padding:0 12px;text-align:center;font-size:11px;line-height:1.5;color:var(--muted)}
 @media(max-width:800px){.shared-platform-legal{font-size:10.5px;padding:0 6px}}
+
 </style>
 </head>
 <body>
@@ -162,6 +164,7 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
       <div>✓ Advanced Dose Tracking</div>
       <div>✓ AI Bartender</div>
       <div>✓ Advanced Statistics</div>
+      
       <div>✓ Allergy, NOVA &amp; Advanced Health Analysis</div>
       <div>✓ Multi-Location Support</div>
     </div>
