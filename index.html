@@ -86,6 +86,35 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
 .shared-platform-legal{margin:16px auto 0;max-width:980px;padding:0 12px;text-align:center;font-size:11px;line-height:1.5;color:var(--muted)}
 @media(max-width:800px){.shared-platform-legal{font-size:10.5px;padding:0 6px}}
 
+
+/* v15 — availability clarity; existing visual identity preserved */
+.coming-premium-subtitle{
+  margin:8px 0 18px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.5;
+}
+.coming-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:8px;
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(13,113,72,.09);
+  border:1px solid rgba(13,113,72,.18);
+  color:var(--g);
+  font-size:9px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.07em;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+@media(max-width:600px){
+  .coming-badge{margin-left:6px;padding:4px 7px;font-size:8.5px}
+}
+
 </style>
 </head>
 <body>
@@ -154,19 +183,20 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
   </div>
   <div class="soon-grid">
     <div class="soon-card">
-      <h3>👨‍👩‍👧 Family &amp; Sharing</h3>
-      <div>✓ Shared Inventory</div>
-      <div>✓ Shared Shopping Lists</div>
-      <div>✓ Shared Medicine Tracking</div>
+      <h3>👨‍👩‍👧 Family &amp; Sharing <span class="coming-badge">COMING SOON</span></h3>
+      <div>Shared Inventory</div>
+      <div>Shared Shopping Lists</div>
+      <div>Shared Medicine Tracking</div>
     </div>
     <div class="soon-card">
-      <h3>More Coming to Premium</h3>
-      <div>✓ Advanced Dose Tracking</div>
-      <div>✓ AI Bartender</div>
-      <div>✓ Advanced Statistics</div>
+      <h3>Coming Soon to Premium</h3>
+<p class="coming-premium-subtitle">More powerful features are already on the way.</p>
+      <div>Advanced Dose Tracking <span class="coming-badge">COMING SOON</span></div>
+      <div>AI Bartender <span class="coming-badge">COMING SOON</span></div>
+      <div>Advanced Statistics <span class="coming-badge">COMING SOON</span></div>
       
-      <div>✓ Allergy, NOVA &amp; Advanced Health Analysis</div>
-      <div>✓ Multi-Location Support</div>
+      <div>Allergy, NOVA &amp; Advanced Health Analysis <span class="coming-badge">COMING SOON</span></div>
+      <div>Multi-Location Support <span class="coming-badge">COMING SOON</span></div>
     </div>
   </div>
 </div></section>
