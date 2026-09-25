@@ -115,6 +115,16 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
   .coming-badge{margin-left:6px;padding:4px 7px;font-size:8.5px}
 }
 
+
+/* v25 — Free / Premium pricing */
+.pricing-section{background:linear-gradient(180deg,#f6fffb,#eaf9f3)}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:980px;margin:0 auto}
+.plan-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 14px 42px rgba(13,113,72,.07)}
+.plan-card.premium{background:linear-gradient(145deg,#f7fffb,#e4f8ef);border-color:rgba(13,113,72,.32);box-shadow:0 18px 52px rgba(13,113,72,.11)}
+.plan-name{font-size:25px;font-weight:900;color:var(--gd);margin:0 0 12px}.plan-price{font-size:46px;line-height:1;font-weight:900;letter-spacing:-.04em;color:var(--ink);margin-bottom:8px}.plan-price small{font-size:16px;font-weight:700;letter-spacing:0;color:var(--muted)}
+.plan-yearly{font-size:20px;font-weight:850;margin:7px 0 4px}.plan-save{display:inline-block;align-self:flex-start;background:rgba(13,113,72,.09);color:var(--g);border-radius:999px;padding:7px 10px;font-size:13px;font-weight:850;margin:5px 0 2px}.tax-note,.plan-note{font-size:13px;color:var(--muted);line-height:1.5}.plan-features{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:12px}.plan-features li{position:relative;padding-left:27px;line-height:1.5}.plan-features li:before{content:'✓';position:absolute;left:0;top:0;color:var(--g);font-weight:900}.plan-features .subnote{display:block;color:var(--muted);font-size:13px;margin-top:3px}.plan-card .btn{margin-top:auto;justify-content:center;min-height:48px}.pricing-legal{max-width:880px;margin:24px auto 0;text-align:center;color:var(--muted);font-size:13px;line-height:1.65}.pricing-legal a{color:var(--g);font-weight:800;text-decoration:underline;text-underline-offset:3px}.btn:focus-visible,.pricing-legal a:focus-visible{outline:3px solid rgba(13,113,72,.28);outline-offset:3px}
+@media(max-width:760px){.pricing-grid{grid-template-columns:1fr}.plan-card{padding:26px 22px}.plan-price{font-size:42px}}
+
 </style>
 </head>
 <body>
@@ -167,6 +177,49 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
   </div>
 </div>
 </section>
+
+<section class="section pricing-section" id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <h2>Start Free. Upgrade when you need more.</h2>
+      <p>Track everyday essentials for free, or upgrade to Premium for higher AI-powered allowances.</p>
+    </div>
+    <div class="pricing-grid">
+      <article class="plan-card" aria-labelledby="free-plan-title">
+        <h3 class="plan-name" id="free-plan-title">Free</h3>
+        <div class="plan-price">€0</div>
+        <ul class="plan-features">
+          <li>30 shared Smart Scans per usage period<span class="subnote">Shared across food, medicines &amp; cosmetic PAO scans.</span></li>
+          <li>2 AI Chef creations per usage period</li>
+          <li>Unlimited barcode scanning</li>
+          <li>Unlimited Food inventory</li>
+          <li>Unlimited Medicines inventory</li>
+          <li>Unlimited Cosmetics inventory</li>
+          <li>Cosmetics PAO tracking and reminders</li>
+        </ul>
+        <a class="btn secondary" href="https://app.nofoodmedwaste.com" target="_blank" rel="noopener">Open App</a>
+      </article>
+      <article class="plan-card premium" aria-labelledby="premium-plan-title">
+        <h3 class="plan-name" id="premium-plan-title">✨ Premium</h3>
+        <div class="plan-price">€6.99 <small>/ month</small></div>
+        <div class="plan-yearly">€69.99 / year</div>
+        <span class="plan-save">Save €13.89 (~16.6%) with yearly</span>
+        <div class="tax-note">Taxes included where applicable.</div>
+        <ul class="plan-features">
+          <li>150 shared Smart Scans per usage period<span class="subnote">Shared across food, medicines &amp; cosmetic PAO scans.</span></li>
+          <li>100 AI Chef creations per usage period</li>
+          <li>Unlimited barcode scanning for Food, Medicines and Cosmetics</li>
+          <li>Unlimited Food inventory</li>
+          <li>Unlimited Medicines inventory</li>
+          <li>Unlimited Cosmetics inventory</li>
+        </ul>
+        <a class="btn primary" href="https://app.nofoodmedwaste.com/premium" target="_blank" rel="noopener">Explore Premium</a>
+      </article>
+    </div>
+    <div class="pricing-legal">Renews automatically until cancelled. Cancel anytime; Premium remains active until the end of the paid billing period. <a href="https://app.nofoodmedwaste.com/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a> · <a href="https://app.nofoodmedwaste.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></div>
+  </div>
+</section>
+
 <section class="section why" id="why"><div class="wrap"><div class="head"><h2>Why Reducing Everyday Product Waste Matters</h2><p>Every year, food, medicines and personal care products go unused or are discarded. Better tracking can help households use products in time, reduce unnecessary waste and make more informed disposal decisions.</p></div><div class="matter"><div class="card"><div class="emoji">💧</div><h3>Water</h3><p>Food waste wastes valuable water resources.</p></div><div class="card"><div class="emoji">🌍</div><h3>Environment</h3><p>Reducing waste helps reduce emissions.</p></div><div class="card"><div class="emoji">💰</div><h3>Money</h3><p>Unused and expired products can increase household costs.</p></div><div class="card"><div class="emoji">♻️</div><h3>Impact</h3><p>Small actions create measurable results.</p></div></div><div style="text-align:center"><a class="learn" href="#impact" target="_blank" rel="noopener">See Your Impact →</a></div></div></section>
 <section class="section" id="impact"><div class="wrap"><div class="impactbox"><div><h2>Small actions. Measurable impact.</h2><p>Track the kinds of impact that matter — money saved, CO₂e avoided, water saved and progress toward wasting less — without turning sustainability into a spreadsheet.</p></div><div class="impactvisual"><div class="metric"><b>💧 Water</b><span>Resources saved</span></div><div class="metric"><b>🌍 CO₂e</b><span>Emissions avoided</span></div><div class="metric"><b>💰 Money</b><span>Household savings</span></div><div class="metric"><b>🔥 Streak</b><span>Waste-free progress</span></div></div></div></div></section>
 <section class="section" id="faq"><div class="wrap">
