@@ -156,6 +156,16 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
  .logo img { width: 98px !important; height: 98px !important; }
  .heroVisual { width: min(100%, 390px); }
 }
+
+/* Coming Soon: compact, readable descriptions in the existing two-card layout. */
+.soon-card .soon-features{display:flex;flex-direction:column;gap:0}
+.soon-card .soon-feature{padding:11px 0;border-bottom:1px solid rgba(13,113,72,.10)}
+.soon-card .soon-feature:last-child{border-bottom:0;padding-bottom:0}
+.soon-card .soon-feature-heading{display:flex;align-items:center;flex-wrap:wrap;gap:6px;line-height:1.4;color:var(--ink)}
+.soon-card .soon-feature-name{font-weight:650;color:var(--ink)}
+.soon-card .soon-feature-description{margin:5px 0 0;font-size:14px;line-height:1.55;color:var(--muted)}
+.soon-card .soon-feature-heading .coming-badge{margin-left:0;white-space:nowrap}
+@media(max-width:480px){.soon-card{padding:22px}.soon-card .soon-feature-description{font-size:13.5px}}
 </style>
 
 
@@ -274,18 +284,22 @@ html{scroll-behavior:smooth}section[id],h2[id]{scroll-margin-top:125px}@media(ma
 <div class="soon-grid">
 <div class="soon-card">
 <h3>👨‍👩‍👧 Family &amp; Sharing <span class="coming-badge">COMING SOON</span></h3>
-<div>Shared Inventory</div>
-<div>Shared Shopping Lists</div>
-<div>Shared Medicine Tracking</div>
+<div class="soon-features">
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Shared Inventory</span></div><p class="soon-feature-description">Keep food, medicines and cosmetics organized and up to date with family members.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Shared Shopping Lists</span></div><p class="soon-feature-description">Create, update and manage shopping lists together with family members.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Shared Medicine Tracking</span></div><p class="soon-feature-description">Share medicine inventory information, track expiry dates and stay organized with family members.</p></div>
+</div>
 </div>
 <div class="soon-card">
 <h3>Coming Soon to Premium</h3>
-<p class="coming-premium-subtitle">More powerful features are already on the way.</p>
-<div>Advanced Dose Tracking <span class="coming-badge">COMING SOON</span></div>
-<div>AI Bartender <span class="coming-badge">COMING SOON</span></div>
-<div>Advanced Statistics <span class="coming-badge">COMING SOON</span></div>
-
-<div>Multi-Location Support <span class="coming-badge">COMING SOON</span></div>
+<p class="coming-premium-subtitle">More powerful features are on the way to help you save time, stay organized and get more from NoFoodMedWaste.</p>
+<div class="soon-features">
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Smart Receipt Scanner</span> <span class="coming-badge">COMING SOON</span></div><p class="soon-feature-description">Scan receipts, review detected food, medicines and cosmetics, and add multiple products to your inventory faster.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Advanced Dose Tracking</span> <span class="coming-badge">COMING SOON</span></div><p class="soon-feature-description">Track medicine doses, record intake and manage medication schedules.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">AI Bartender</span> <span class="coming-badge">COMING SOON</span></div><p class="soon-feature-description">Discover personalized drink and cocktail ideas using ingredients you already have.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Advanced Statistics</span> <span class="coming-badge">COMING SOON</span></div><p class="soon-feature-description">Explore detailed insights into your savings, usage patterns and environmental impact.</p></div>
+<div class="soon-feature"><div class="soon-feature-heading"><span class="soon-feature-name">Multi-Location Support</span> <span class="coming-badge">COMING SOON</span></div><p class="soon-feature-description">Organize and manage products across multiple locations, such as home, office or holiday properties.</p></div>
+</div>
 </div>
 </div>
 </div></section>
